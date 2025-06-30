@@ -1,0 +1,98 @@
+
+.container {
+    background-color: #eee;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    padding: 20px;
+    width: 100px;
+    height: 250px;
+}
+
+.up-sankaku {
+    border-radius: 10%;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.up-sankaku span {
+    margin: 0;
+    padding: 0;
+    font-size: 44px;
+    top: -6px;
+    left: 8px;
+    position: absolute;
+}
+
+
+.number {
+    background-color: rgba(65, 65, 65, 0.5);
+    width: 60px;
+    height: 60px;
+    border-radius: 40%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.number span {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+}
+
+.down-sankaku {
+    border-radius: 12px;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.down-sankaku span {
+    margin: 0;
+    padding: 0;
+    font-size: 44px;
+    top: -2px;
+    left: 8px;
+    position: absolute;
+}
+
+.pulse-target {
+    transition: transform 1s ease-in-out;
+}
+
+.pulse {
+    animation: pulseScale 1s infinite alternate;
+}
+
+.strong-pulse.pulse {
+    animation-name: pulseScale_strong;
+}
+
+@keyframes pulseScale {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes pulseScale_strong {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}

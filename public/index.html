@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/appeal_animation.css">
+</head>
+<body>
+    <!-- top, sub, background -->
+    <section class="BG"></section>
+    <section class="top"></section>
+    <section class="cart">
+        <div class="inCart-topArea">
+            <div class="hide-btn pulse-target groupA-fixed strong-pulse">▲</div>
+            <div class="inCart-display inCart-en">0</div>
+            <div class="inCart-display inCart-ko">0</div>
+            <div class="inCart-btn"><img src="img/cart.png" alt="" width="36" height="36"></div>
+        </div>
+        <div class="cart-container">
+            <ul><div id="output"></div></ul>
+        </div>
+    </section>
+    <div class="overlay-area"></div>
+    <div class="cart-in-selection">
+        <div class="selection-text selection-style shippori-antique-regular">チャーハン</div>
+
+        <div class="selection-0">
+
+            <div class="selection-container selection-style selection-1">
+                <div class="selection-price-en">
+                    <div class="selection-price selection-style shippori-antique-regular">
+                        <span>800</span>
+                    </div>
+                    <div class="selection-3">
+                        <div class="selection-en selection-style shippori-antique-regular">円</div>
+                    </div>
+                </div>
+
+                <div class="selection-explain selection-style shippori-antique-regular">チャーハンです。</div>
+            </div>
+            
+            <div class="selection-container selection-style selection-2">
+                <div class="selection-minus-container pusle-target groupC-fixed">
+                    <span>▼</span>
+                    <div class="minus">－</div>
+                </div>
+
+                <div class="selection-4 pusle-target groupB-fixed">
+                    <div class="selection-num selection-style shippori-antique-regular">1</div>
+                    <div class="selection-ko selection-style shippori-antique-regular">個</div>
+                </div>
+
+                <div class="selection-plus-container pusle-target groupA-fixed">
+                    <span>▲</span>
+                    <div class="plus">＋</div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="selection-container selection-style">
+            <div class="selection-cancel selection-style"><img src="img/cancel4.png" alt=""></div>
+            <div class="selection-send selection-style"><img src="img/cart.png" alt="" width="36" height="36"></div>
+        </div>
+    </div>
+    <div class="cart-in-selection-overlay"></div>
+
+    <!-- header -->
+    <section class="header">
+        <div class="header-container">
+            <div class="cart-price-wrapper">
+                <span class="cart-display">合計</span>
+                <div class="cart-price cart-display">
+                    <span></span>
+                </div>
+                <span class="cart-display en-display">円</span>
+                <span class="cart-display">合計</span>
+                <div class="cart-total cart-display">
+                    <span>0</span>
+                </div>
+                <span class="cart-display ko-display">個</span>
+            </div>
+            <div class="cart-btn"><img src="img/cart.png" alt="" width="48" height="48" class="pulse-target groupA-fixed strong-pulse"></div>
+        </div>
+    </section>
+
+    <!-- main -->
+    <section class="main">
+        <div class="leftGoBtn">＜</div>
+        <div class="rightGoBtn">＞</div>
+        <div class="menu">
+            <ul>
+            </ul>
+            <div class="cart-in-animation"><img src="img/raimon.png" alt=""></div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-container">
+        </div>
+    </section>
+    
+    <script src="js/sendOrders.js"></script>
+    <script src="js/appeal_animation.js"></script>
+    <script src="js/cart_in_animation.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/smooth_scroll.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
